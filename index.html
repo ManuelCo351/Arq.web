@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolución de la Arquitectura Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVBAR PRINCIPAL
+  ═══════════════════════════════════════════════════════════ -->
+  <nav id="main-nav">
+    <span class="nav-title">Arq. Web</span>
+    <div class="nav-buttons">
+      <button class="nav-btn active" onclick="showSection('web10', this)">
+        <span class="nav-icon">💾</span>
+        <span class="nav-label">Web 1.0</span>
+        <span class="nav-sub">Los 90s</span>
+      </button>
+      <button class="nav-btn" onclick="showSection('web20', this)">
+        <span class="nav-icon">🌐</span>
+        <span class="nav-label">Web 2.0</span>
+        <span class="nav-sub">Los 2000s</span>
+      </button>
+      <button class="nav-btn" onclick="showSection('mobile', this)">
+        <span class="nav-icon">📱</span>
+        <span class="nav-label">Mobile</span>
+        <span class="nav-sub">Los 2010s</span>
+      </button>
+      <button class="nav-btn" onclick="showSection('modern', this)">
+        <span class="nav-icon">⚡</span>
+        <span class="nav-label">Moderna</span>
+        <span class="nav-sub">Hoy</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 1 — WEB 1.0 (90s)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="web10" class="era-section">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <marquee behavior="scroll" direction="left" scrollamount="4" class="web10-marquee">
+            ★ BIENVENIDO A MI PÁGINA WEB ★ &nbsp;&nbsp;&nbsp;
+            BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 AT 800x600 &nbsp;&nbsp;&nbsp;
+            ★ UNDER CONSTRUCTION ★ &nbsp;&nbsp;&nbsp;
+            GUESTBOOK | LINKS | FOTOS &nbsp;&nbsp;&nbsp;
+            ARQUITECTURA WEB 1.0 — ESTÁTICA Y PURA &nbsp;&nbsp;&nbsp;
+          </marquee>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <center>
+            <font face="Times New Roman, serif" size="6" color="#FFFF00">
+              <b>:: La Arquitectura Web 1.0 ::</b>
+            </font>
+            <br />
+            <font face="Courier New" size="2" color="#00FF00">
+              Arquitectura Estática — El Origen de la Web (1991–1999)
+            </font>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table width="960" border="0" cellpadding="8" cellspacing="4" align="center" class="web10-main-table">
+            <tr>
+              <!-- SIDEBAR IZQUIERDO -->
+              <td width="200" valign="top" class="web10-sidebar">
+                <table border="2" cellpadding="6" width="100%" class="web10-box">
+                  <tr><td><font color="#FFFF00" face="Arial" size="2"><b>🔗 LINKS</b></font></td></tr>
+                  <tr><td>
+                    <a href="#" class="web10-link">» Inicio</a><br/>
+                    <a href="#" class="web10-link">» Sobre Mí</a><br/>
+                    <a href="#" class="web10-link">» Mis Fotos</a><br/>
+                    <a href="#" class="web10-link">» Guestbook</a><br/>
+                    <a href="#" class="web10-link">» Links Cool</a><br/>
+                    <a href="#" class="web10-link">» Contacto</a>
+                  </td></tr>
+                </table>
+                <br/>
+                <table border="2" cellpadding="6" width="100%" class="web10-box">
+                  <tr><td><font color="#FFFF00" face="Arial" size="2"><b>📊 VISITAS</b></font></td></tr>
+                  <tr><td>
+                    <center>
+                      <div class="web10-counter">
+                        <span>0</span><span>0</span><span>4</span><span>2</span><span>7</span><span>3</span>
+                      </div>
+                      <font color="#AAAAAA" size="1">desde 01/01/1999</font>
+                    </center>
+                  </td></tr>
+                </table>
+                <br/>
+                <table border="2" cellpadding="6" width="100%" class="web10-box">
+                  <tr><td><font color="#FFFF00" face="Arial" size="2"><b>⚡ ESTADO</b></font></td></tr>
+                  <tr><td>
+                    <div class="web10-badge">Netscape<br/>Navigator</div>
+                    <div class="web10-badge web10-badge-res">800×600</div>
+                    <div class="web10-badge web10-badge-uc">⚠ Under<br/>Construction</div>
+                  </td></tr>
+                </table>
+              </td>
+
+              <!-- CONTENIDO CENTRAL -->
+              <td valign="top" class="web10-content">
+                <table border="2" cellpadding="10" width="100%" class="web10-box">
+                  <tr>
+                    <td>
+                      <center>
+                        <font face="Impact, Arial Black" size="5" color="#FF6600">
+                          ▶ ARQUITECTURA ESTÁTICA ◀
+                        </font>
+                      </center>
+                      <hr color="#555555"/>
+
+                      <font face="Courier New" size="2" color="#00FF00">
+                        <b>¿Cómo funcionaba la Web 1.0?</b>
+                      </font>
+                      <br/><br/>
+                      <font face="Verdana" size="2" color="#CCCCCC">
+                        En los años 90, la web era completamente <b><font color="#FFFF00">estática</font></b>.
+                        El servidor guardaba archivos <b>.html</b> en el disco. Cuando el usuario
+                        hacía una petición HTTP, el servidor los enviaba tal cual. No había
+                        base de datos, no había lógica del servidor, no había JavaScript dinámico.
+                        Cada página era un archivo físico en el servidor.
+                      </font>
+                      <br/><br/>
+
+                      <!-- DIAGRAMA RETRO -->
+                      <table border="2" cellpadding="8" width="100%" bgcolor="#001100" class="web10-diagram">
+                        <tr>
+                          <td align="center"><font color="#00FF00" face="Courier New" size="2">
+                            <b>[ NAVEGADOR ]</b><br/>
+                            <font size="1">Netscape / IE</font>
+                          </font></td>
+                          <td align="center"><font color="#FFFF00" size="3">─────&gt;</font></td>
+                          <td align="center"><font color="#00FF00" face="Courier New" size="2">
+                            <b>[ SERVIDOR ]</b><br/>
+                            <font size="1">Apache / IIS</font>
+                          </font></td>
+                          <td align="center"><font color="#FFFF00" size="3">─────&gt;</font></td>
+                          <td align="center"><font color="#00FF00" face="Courier New" size="2">
+                            <b>[ ARCHIVOS ]</b><br/>
+                            <font size="1">.html / .gif</font>
+                          </font></td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" align="center">
+                            <font color="#555555" face="Courier New" size="1">
+                              &lt;─────────────── HTTP Response (HTML puro) ───────────────
+                            </font>
+                          </td>
+                        </tr>
+                      </table>
+                      <br/>
+
+                      <font face="Courier New" size="2" color="#00FF00">
+                        <b>Tecnologías de la época:</b>
+                      </font>
+                      <br/><br/>
+                      <table border="0" cellpadding="4">
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">HTML 1.0 / 2.0 — Sin CSS, sin JS dinámico</font></td>
+                        </tr>
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">GIF animados como único elemento "dinámico"</font></td>
+                        </tr>
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">Formularios básicos enviados por GET/POST</font></td>
+                        </tr>
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">Protocolo HTTP/1.0 — una conexión por recurso</font></td>
+                        </tr>
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">Hosting en servidores FTP compartidos</font></td>
+                        </tr>
+                        <tr>
+                          <td><font color="#FF6666" size="2">✦</font></td>
+                          <td><font color="#CCCCCC" size="2" face="Verdana">Sin estado (stateless) — sin cookies, sin sesiones</font></td>
+                        </tr>
+                      </table>
+                      <br/>
+
+                      <!-- CÓDIGO RETRO -->
+                      <div class="web10-code-block">
+                        <font color="#888888" size="1" face="Courier New">&lt;!-- index.html — circa 1996 —&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&lt;html&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&lt;body </font><font color="#FFFF00" size="2" face="Courier New">bgcolor="black" text="white"</font><font color="#FF6600" size="2" face="Courier New">&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&lt;center&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&nbsp;&lt;font </font><font color="#FFFF00" size="2" face="Courier New">color="yellow" size="6"</font><font color="#FF6600" size="2" face="Courier New">&gt;</font><font color="#FFFFFF" size="2" face="Courier New">Mi Página</font><font color="#FF6600" size="2" face="Courier New">&lt;/font&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&nbsp;&lt;marquee&gt;</font><font color="#FFFFFF" size="2" face="Courier New">★ BIENVENIDO AL CIBERESPACIO ★</font><font color="#FF6600" size="2" face="Courier New">&lt;/marquee&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&nbsp;&lt;table </font><font color="#FFFF00" size="2" face="Courier New">border="2" bgcolor="#000033"</font><font color="#FF6600" size="2" face="Courier New">&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;&lt;td&gt;</font><font color="#FFFFFF" size="2" face="Courier New">Hola Mundo!</font><font color="#FF6600" size="2" face="Courier New">&lt;/td&gt;&lt;/tr&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&nbsp;&lt;/table&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&nbsp;&lt;/center&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&nbsp;&lt;/body&gt;</font><br/>
+                        <font color="#FF6600" size="2" face="Courier New">&lt;/html&gt;</font>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+
+              <!-- SIDEBAR DERECHO -->
+              <td width="180" valign="top" class="web10-sidebar">
+                <table border="2" cellpadding="6" width="100%" class="web10-box">
+                  <tr><td><font color="#FFFF00" face="Arial" size="2"><b>⚡ CARACTERÍSTICAS</b></font></td></tr>
+                  <tr><td>
+                    <font color="#AAFFAA" face="Courier New" size="1">
+                      ✔ Sin BD<br/>
+                      ✔ Sin JS<br/>
+                      ✔ Sin sesiones<br/>
+                      ✔ Solo HTML<br/>
+                      ✔ Rápido<br/>
+                      ✗ No dinámico<br/>
+                      ✗ No interactivo<br/>
+                      ✗ No escalable<br/>
+                      ✗ Difícil mantener
+                    </font>
+                  </td></tr>
+                </table>
+                <br/>
+                <table border="2" cellpadding="6" width="100%" class="web10-box">
+                  <tr><td><font color="#FFFF00" face="Arial" size="2"><b>📅 TIMELINE</b></font></td></tr>
+                  <tr><td>
+                    <font color="#AAAAFF" face="Courier New" size="1">
+                      1991: Tim Berners-Lee<br/>inventa la Web<br/><br/>
+                      1993: Mosaic Browser<br/><br/>
+                      1994: Netscape<br/>Navigator 1.0<br/><br/>
+                      1995: IE 1.0 lanzado<br/><br/>
+                      1996: CSS 1.0<br/>especificación<br/><br/>
+                      1997: HTML 3.2<br/>estándar oficial<br/><br/>
+                      1999: HTML 4.01
+                    </font>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <center>
+            <font face="Arial" size="1" color="#555555">
+              © 1999 Mi Súper Página Web — Todos los derechos reservados —
+              Optimizado para Netscape Navigator 4.0 a 800×600
+            </font>
+          </center>
+          <br/>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 2 — WEB 2.0 (2000s)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="web20" class="era-section hidden">
+    <div id="web20-wrapper">
+
+      <div id="web20-header">
+        <div id="web20-logo">
+          <span class="web20-logo-text">WebDev<span class="web20-logo-accent">Blog</span></span>
+          <span class="web20-tagline">Compartiendo código desde 2004 ✦ RSS | Atom | Email</span>
+        </div>
+        <div id="web20-header-right">
+          <div id="web20-search">
+            <input type="text" placeholder="Buscar en el blog..." class="web20-input" />
+            <button class="web20-btn-glossy web20-btn-search">Buscar</button>
+          </div>
+          <div id="web20-user-bar">
+            <span class="web20-avatar-small">JD</span>
+            <span>admin</span> |
+            <a href="#" class="web20-link20">Panel</a> |
+            <a href="#" class="web20-link20">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="web20-nav-bar">
+        <a href="#" class="web20-nav-link web20-nav-active">Inicio</a>
+        <a href="#" class="web20-nav-link">Tutoriales</a>
+        <a href="#" class="web20-nav-link">Noticias</a>
+        <a href="#" class="web20-nav-link">Proyectos</a>
+        <a href="#" class="web20-nav-link">Comunidad</a>
+        <a href="#" class="web20-nav-link">Foro</a>
+        <a href="#" class="web20-nav-link">Contacto</a>
+      </div>
+
+      <div id="web20-layout">
+
+        <!-- SIDEBAR IZQUIERDO -->
+        <div id="web20-sidebar-left">
+          <div class="web20-widget">
+            <div class="web20-widget-title">👤 El Autor</div>
+            <div class="web20-widget-body">
+              <div class="web20-author-box">
+                <div class="web20-author-avatar">JD</div>
+                <div>
+                  <strong>Juan Dev</strong><br/>
+                  <small>Webmaster &amp; Blogger<br/>Buenos Aires, AR 🇦🇷</small>
+                </div>
+              </div>
+              <div class="web20-author-links">
+                <a href="#" class="web20-social-btn" style="background:#1877f2">Facebook</a>
+                <a href="#" class="web20-social-btn" style="background:#1da1f2">Twitter</a>
+                <a href="#" class="web20-social-btn" style="background:#e1306c">Fotolog</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="web20-widget">
+            <div class="web20-widget-title">📁 Categorías</div>
+            <div class="web20-widget-body">
+              <ul class="web20-cat-list">
+                <li><a href="#" class="web20-link20">PHP</a> (24)</li>
+                <li><a href="#" class="web20-link20">JavaScript</a> (18)</li>
+                <li><a href="#" class="web20-link20">MySQL</a> (12)</li>
+                <li><a href="#" class="web20-link20">CSS</a> (9)</li>
+                <li><a href="#" class="web20-link20">Flash</a> (7)</li>
+                <li><a href="#" class="web20-link20">Ajax</a> (5)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="web20-widget">
+            <div class="web20-widget-title">🗓 Calendario</div>
+            <div class="web20-widget-body">
+              <div class="web20-calendar">
+                <div class="web20-cal-header">« Marzo 2006 »</div>
+                <div class="web20-cal-grid">
+                  <span class="web20-cal-day-name">L</span>
+                  <span class="web20-cal-day-name">M</span>
+                  <span class="web20-cal-day-name">X</span>
+                  <span class="web20-cal-day-name">J</span>
+                  <span class="web20-cal-day-name">V</span>
+                  <span class="web20-cal-day-name">S</span>
+                  <span class="web20-cal-day-name">D</span>
+                  <span></span><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+                  <span>13</span><span>14</span><span class="web20-cal-today">15</span><span>16</span><span>17</span><span>18</span><span>19</span>
+                  <span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span>
+                  <span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTENIDO CENTRAL -->
+        <div id="web20-content">
+          <div class="web20-post">
+            <div class="web20-post-header">
+              <h2 class="web20-post-title">⚙ Arquitectura Dinámica: AJAX + PHP + MySQL</h2>
+              <div class="web20-post-meta">
+                Por <a href="#" class="web20-link20">Juan Dev</a> |
+                15 de Marzo, 2006 |
+                <a href="#" class="web20-link20">PHP</a>,
+                <a href="#" class="web20-link20">Ajax</a>
+              </div>
+            </div>
+            <div class="web20-post-body">
+              <p>La <strong>Web 2.0</strong> revolucionó la arquitectura web al introducir
+              lógica en el servidor. Ya no servíamos archivos estáticos: ahora el servidor
+              ejecutaba código <strong>PHP</strong> que consultaba una <strong>base de datos MySQL</strong>
+              y generaba HTML dinámico a partir de los datos.</p>
+
+              <div class="web20-diagram">
+                <div class="web20-diag-node web20-diag-browser">🌐<br/><small>Browser</small></div>
+                <div class="web20-diag-arrow">⇄<br/><small>HTTP + AJAX</small></div>
+                <div class="web20-diag-node web20-diag-server">⚙<br/><small>Apache + PHP</small></div>
+                <div class="web20-diag-arrow">⇄<br/><small>SQL Query</small></div>
+                <div class="web20-diag-node web20-diag-db">🗄<br/><small>MySQL</small></div>
+              </div>
+
+              <p>La <strong>revolución real</strong> fue <strong>AJAX</strong> (Asynchronous JavaScript
+              and XML). Con esta técnica, el navegador podía pedir datos al servidor
+              <em>sin recargar la página completa</em>. Gmail lo popularizó en 2004.</p>
+
+              <div class="web20-code">
+                <div class="web20-code-header">
+                  <span>ejemplo_ajax.php — Código típico del 2006</span>
+                  <button class="web20-btn-glossy web20-btn-tiny" onclick="this.textContent='¡Copiado!'">Copiar</button>
+                </div>
+                <pre><code><span class="web20-php">&lt;?php</span>
+  <span class="web20-comment">// Conectar a la base de datos</span>
+  <span class="web20-keyword">$conn</span> = mysql_connect(<span class="web20-string">"localhost"</span>, <span class="web20-string">"root"</span>, <span class="web20-string">""</span>);
+  mysql_select_db(<span class="web20-string">"mi_blog"</span>, <span class="web20-keyword">$conn</span>);
+
+  <span class="web20-comment">// Consultar entradas del blog</span>
+  <span class="web20-keyword">$result</span> = mysql_query(
+    <span class="web20-string">"SELECT * FROM posts ORDER BY fecha DESC"</span>
+  );
+
+  <span class="web20-keyword">while</span> (<span class="web20-keyword">$row</span> = mysql_fetch_array(<span class="web20-keyword">$result</span>)) {
+    <span class="web20-keyword">echo</span> <span class="web20-string">"&lt;div class='post'&gt;"</span>
+       . <span class="web20-keyword">$row</span>[<span class="web20-string">'titulo'</span>]
+       . <span class="web20-string">"&lt;/div&gt;"</span>;
+  }
+<span class="web20-php">?&gt;</span>
+
+<span class="web20-comment">// JavaScript: XMLHttpRequest (pre-jQuery)</span>
+<span class="web20-keyword">var</span> xhr = <span class="web20-keyword">new</span> XMLHttpRequest();
+xhr.open(<span class="web20-string">'GET'</span>, <span class="web20-string">'data.php?id=1'</span>, <span class="web20-keyword">true</span>);
+xhr.onreadystatechange = <span class="web20-keyword">function</span>() {
+  <span class="web20-keyword">if</span> (xhr.readyState === 4 &amp;&amp; xhr.status === 200) {
+    document.getElementById(<span class="web20-string">'content'</span>)
+            .innerHTML = xhr.responseText;
+  }
+};
+xhr.send();</code></pre>
+              </div>
+
+              <div class="web20-tags">
+                <strong>Tags:</strong>
+                <span class="web20-tag">PHP</span>
+                <span class="web20-tag">AJAX</span>
+                <span class="web20-tag">MySQL</span>
+                <span class="web20-tag">Web2.0</span>
+                <span class="web20-tag">XMLHttpRequest</span>
+                <span class="web20-tag">jQuery</span>
+              </div>
+
+              <div class="web20-post-footer">
+                <div class="web20-actions">
+                  <button class="web20-btn-glossy" onclick="likePost(this)">
+                    👍 Me gusta <span class="web20-count">42</span>
+                  </button>
+                  <button class="web20-btn-glossy">🔗 Compartir</button>
+                  <button class="web20-btn-glossy">📧 Email</button>
+                </div>
+                <div>
+                  <a href="#web20-comments" class="web20-link20">💬 Ver 3 comentarios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECCIÓN COMENTARIOS -->
+          <div id="web20-comments">
+            <h3 class="web20-comments-title">💬 Comentarios (3)</h3>
+
+            <div class="web20-comment">
+              <div class="web20-comment-avatar">PM</div>
+              <div class="web20-comment-body">
+                <div class="web20-comment-meta">
+                  <strong>Pedro M.</strong> — 15/03/2006 a las 14:22
+                </div>
+                <p>¡Excelente post! Justo lo que necesitaba para mi proyecto de la facu.
+                ¿Podés poner un ejemplo con jQuery? Vi que está de moda.</p>
+                <a href="#" class="web20-link20 web20-comment-reply">↳ Responder</a>
+              </div>
+            </div>
+
+            <div class="web20-comment web20-comment-author">
+              <div class="web20-comment-avatar web20-avatar-me">JD</div>
+              <div class="web20-comment-body">
+                <div class="web20-comment-meta">
+                  <strong>Juan Dev</strong>
+                  <span class="web20-badge-author">Autor</span>
+                  — 15/03/2006 a las 15:10
+                </div>
+                <p>¡Gracias Pedro! Sí, la próxima semana publico el mismo ejemplo
+                usando jQuery 1.0. Es mucho más limpio que el XHR nativo.</p>
+                <a href="#" class="web20-link20 web20-comment-reply">↳ Responder</a>
+              </div>
+            </div>
+
+            <div class="web20-comment">
+              <div class="web20-comment-avatar">AL</div>
+              <div class="web20-comment-body">
+                <div class="web20-comment-meta">
+                  <strong>Ana L.</strong> — 16/03/2006 a las 09:45
+                </div>
+                <p>¿Y qué pasa con la seguridad? ¿No es peligroso pasar el ID
+                directo en la URL? Vi algo de SQL Injection en un foro...</p>
+                <a href="#" class="web20-link20 web20-comment-reply">↳ Responder</a>
+              </div>
+            </div>
+
+            <div class="web20-comment-form">
+              <h4>Dejá tu comentario</h4>
+              <div class="web20-form-row">
+                <input type="text" placeholder="Tu nombre" class="web20-input web20-input-half"/>
+                <input type="text" placeholder="Tu email" class="web20-input web20-input-half"/>
+              </div>
+              <textarea placeholder="Escribí tu comentario acá..." class="web20-textarea"></textarea>
+              <button class="web20-btn-glossy web20-btn-submit" onclick="submitComment(this)">
+                📨 Publicar Comentario
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR DERECHO -->
+        <div id="web20-sidebar-right">
+          <div class="web20-widget">
+            <div class="web20-widget-title">☁ Tag Cloud</div>
+            <div class="web20-widget-body web20-tagcloud">
+              <a href="#" style="font-size:20px">PHP</a>
+              <a href="#" style="font-size:14px">CSS</a>
+              <a href="#" style="font-size:18px">MySQL</a>
+              <a href="#" style="font-size:24px">JavaScript</a>
+              <a href="#" style="font-size:12px">Flash</a>
+              <a href="#" style="font-size:16px">Ajax</a>
+              <a href="#" style="font-size:13px">Perl</a>
+              <a href="#" style="font-size:22px">jQuery</a>
+              <a href="#" style="font-size:11px">RSS</a>
+              <a href="#" style="font-size:15px">Blog</a>
+              <a href="#" style="font-size:19px">Web2.0</a>
+            </div>
+          </div>
+
+          <div class="web20-widget">
+            <div class="web20-widget-title">🎵 Ahora escuchando</div>
+            <div class="web20-widget-body">
+              <div class="web20-player">
+                <div class="web20-player-track">System of a Down — BYOB</div>
+                <div class="web20-player-bar">
+                  <div class="web20-player-progress"></div>
+                </div>
+                <div class="web20-player-controls">
+                  <button class="web20-btn-glossy web20-btn-tiny">⏮</button>
+                  <button class="web20-btn-glossy web20-btn-tiny">⏯</button>
+                  <button class="web20-btn-glossy web20-btn-tiny">⏭</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="web20-widget">
+            <div class="web20-widget-title">📰 Posts Recientes</div>
+            <div class="web20-widget-body">
+              <ul class="web20-recent-list">
+                <li><a href="#" class="web20-link20">Intro a jQuery 1.0</a></li>
+                <li><a href="#" class="web20-link20">MySQL vs PostgreSQL</a></li>
+                <li><a href="#" class="web20-link20">Flash vs JavaScript</a></li>
+                <li><a href="#" class="web20-link20">Guía completa de CSS2</a></li>
+                <li><a href="#" class="web20-link20">Mi primer CRUD en PHP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- fin #web20-layout -->
+
+      <div id="web20-footer">
+        <p>© 2006 WebDevBlog — Powered by <strong>PHP 4.4</strong> +
+        <strong>MySQL 4.0</strong> + <strong>Apache 2.0</strong></p>
+        <p><small>Optimizado para Firefox 1.5 e Internet Explorer 6.0 | RSS disponible</small></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 3 — ERA MOBILE (2010s)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="mobile" class="era-section hidden">
+    <div id="mobile-wrapper">
+
+      <!-- PANEL IZQUIERDO -->
+      <div id="mobile-info-panel">
+        <h2 class="mobile-panel-title">📱 Era Mobile &amp; SPAs</h2>
+        <p class="mobile-panel-subtitle">
+          La web se volvió responsive, las apps nativas cedieron terreno
+          a las Progressive Web Apps y los frameworks JS tomaron el control.
+        </p>
+
+        <div class="mobile-tech-grid">
+          <div class="mobile-tech-card">
+            <div class="mobile-tech-icon">📐</div>
+            <div class="mobile-tech-name">Responsive Design</div>
+            <div class="mobile-tech-desc">Media Queries CSS3, layouts fluidos, imágenes adaptables. Mobile-first methodology.</div>
+          </div>
+          <div class="mobile-tech-card">
+            <div class="mobile-tech-icon">⚛</div>
+            <div class="mobile-tech-name">SPAs</div>
+            <div class="mobile-tech-desc">Angular.js, React, Vue. Una sola carga HTML, navegación virtual con el History API.</div>
+          </div>
+          <div class="mobile-tech-card">
+            <div class="mobile-tech-icon">🔌</div>
+            <div class="mobile-tech-name">REST APIs</div>
+            <div class="mobile-tech-desc">JSON reemplaza XML. Separación total cliente-servidor. Fetch API reemplaza XHR.</div>
+          </div>
+          <div class="mobile-tech-card">
+            <div class="mobile-tech-icon">🔧</div>
+            <div class="mobile-tech-name">PWA</div>
+            <div class="mobile-tech-desc">Service Workers, offline-first, notificaciones push, instalable en el home screen.</div>
+          </div>
+        </div>
+
+        <div class="mobile-arch-diagram">
+          <div class="mobile-arch-title">Arquitectura SPA + API REST</div>
+          <div class="mobile-arch-flow">
+            <div class="mobile-arch-node mobile-node-client">
+              <span class="mobile-node-icon">📱</span>
+              <span>Cliente SPA</span>
+              <small>React / Vue / Angular</small>
+            </div>
+            <div class="mobile-arch-connector">
+              <span class="mobile-connector-line"></span>
+              <span class="mobile-connector-label">JSON / REST</span>
+              <span class="mobile-connector-line"></span>
+            </div>
+            <div class="mobile-arch-node mobile-node-api">
+              <span class="mobile-node-icon">⚙</span>
+              <span>API REST</span>
+              <small>Node.js / Express</small>
+            </div>
+            <div class="mobile-arch-connector">
+              <span class="mobile-connector-line"></span>
+              <span class="mobile-connector-label">ORM / SQL</span>
+              <span class="mobile-connector-line"></span>
+            </div>
+            <div class="mobile-arch-node mobile-node-db">
+              <span class="mobile-node-icon">🗄</span>
+              <span>Base de Datos</span>
+              <small>MongoDB / PostgreSQL</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SMARTPHONE MOCKUP -->
+      <div id="mobile-phone-container">
+        <div class="phone-frame">
+
+          <div class="phone-notch">
+            <div class="phone-speaker"></div>
+          </div>
+
+          <div class="phone-status-bar">
+            <span class="phone-status-time">9:41</span>
+            <div class="phone-status-icons">
+              <span>●●●</span>
+              <span>WiFi</span>
+              <span>🔋</span>
+            </div>
+          </div>
+
+          <div class="phone-screen">
+
+            <!-- APP HEADER -->
+            <div class="phone-app-header">
+              <button class="phone-hamburger" onclick="toggleMobileMenu()" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+              </button>
+              <span class="phone-app-name">SocialFeed</span>
+              <button class="phone-icon-btn">🔔</button>
+            </div>
+
+            <!-- HAMBURGER MENU -->
+            <div id="phone-menu" class="phone-menu hidden">
+              <div class="phone-menu-header">
+                <div class="phone-menu-avatar">JD</div>
+                <div>
+                  <strong>Juan Dev</strong><br/>
+                  <small>@juandev · 1.2k seguidores</small>
+                </div>
+                <button class="phone-menu-close" onclick="toggleMobileMenu()">✕</button>
+              </div>
+              <nav class="phone-menu-nav">
+                <a href="#" class="phone-menu-item">🏠 Inicio</a>
+                <a href="#" class="phone-menu-item">🔍 Explorar</a>
+                <a href="#" class="phone-menu-item">👤 Mi Perfil</a>
+                <a href="#" class="phone-menu-item">💬 Mensajes</a>
+                <a href="#" class="phone-menu-item">🔔 Notificaciones</a>
+                <a href="#" class="phone-menu-item">⚙ Ajustes</a>
+                <a href="#" class="phone-menu-item phone-menu-logout">🚪 Cerrar sesión</a>
+              </nav>
+            </div>
+
+            <!-- STORIES -->
+            <div class="phone-stories">
+              <div class="phone-story">
+                <div class="phone-story-avatar phone-story-add">＋</div>
+                <span>Tu historia</span>
+              </div>
+              <div class="phone-story">
+                <div class="phone-story-avatar" style="background:linear-gradient(135deg,#f09,#f30)">M</div>
+                <span>María</span>
+              </div>
+              <div class="phone-story">
+                <div class="phone-story-avatar" style="background:linear-gradient(135deg,#09f,#06f)">C</div>
+                <span>Carlos</span>
+              </div>
+              <div class="phone-story">
+                <div class="phone-story-avatar" style="background:linear-gradient(135deg,#0f9,#0a6)">A</div>
+                <span>Ana</span>
+              </div>
+            </div>
+
+            <!-- FEED -->
+            <div class="phone-feed">
+
+              <div class="phone-post">
+                <div class="phone-post-header">
+                  <div class="phone-post-avatar" style="background:linear-gradient(135deg,#f09,#f30)">M</div>
+                  <div class="phone-post-user">
+                    <strong>María García</strong>
+                    <small>@mgarcia · 2m</small>
+                  </div>
+                  <button class="phone-more-btn">···</button>
+                </div>
+                <div class="phone-post-image" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+                  <span class="phone-post-img-text">📸 SPA con React</span>
+                </div>
+                <div class="phone-post-actions">
+                  <button class="phone-action-btn" onclick="likePhonePost(this)">🤍 124</button>
+                  <button class="phone-action-btn">💬 32</button>
+                  <button class="phone-action-btn">↗</button>
+                </div>
+                <div class="phone-post-caption">
+                  <strong>María García</strong> Mirá la nueva SPA que construí con React! 🚀 #webdev #react
+                </div>
+              </div>
+
+              <div class="phone-post">
+                <div class="phone-post-header">
+                  <div class="phone-post-avatar" style="background:linear-gradient(135deg,#09f,#06f)">C</div>
+                  <div class="phone-post-user">
+                    <strong>Carlos López</strong>
+                    <small>@clopez · 15m</small>
+                  </div>
+                  <button class="phone-more-btn">···</button>
+                </div>
+                <div class="phone-post-text-only">
+                  "Mobile first" no es solo un concepto de diseño, es una filosofía de desarrollo.
+                  El 70% del tráfico web actual viene de dispositivos móviles 📊 #mobilefirst
+                </div>
+                <div class="phone-post-actions">
+                  <button class="phone-action-btn" onclick="likePhonePost(this)">🤍 89</button>
+                  <button class="phone-action-btn">💬 14</button>
+                  <button class="phone-action-btn">↗</button>
+                </div>
+              </div>
+
+            </div><!-- fin phone-feed -->
+
+            <!-- BOTTOM NAV -->
+            <div class="phone-bottom-nav">
+              <button class="phone-nav-item phone-nav-active">🏠</button>
+              <button class="phone-nav-item">🔍</button>
+              <button class="phone-nav-item phone-nav-plus">＋</button>
+              <button class="phone-nav-item">♡</button>
+              <button class="phone-nav-item">👤</button>
+            </div>
+
+          </div><!-- fin phone-screen -->
+
+          <div class="phone-home-indicator"></div>
+        </div><!-- fin phone-frame -->
+
+        <div class="phone-shadow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECCIÓN 4 — WEB MODERNA (Hoy)
+  ═══════════════════════════════════════════════════════════ -->
+  <section id="modern" class="era-section hidden">
+
+    <header id="modern-header">
+      <div id="modern-header-inner">
+        <div id="modern-logo">
+          <div id="modern-logo-icon">⚡</div>
+          <div>
+            <div id="modern-logo-title">WebArch <span id="modern-logo-badge">2024</span></div>
+            <div id="modern-logo-sub">Serverless · APIs · Componentes · AI</div>
+          </div>
+        </div>
+        <nav id="modern-top-nav">
+          <a href="#" class="modern-nav-link">Docs</a>
+          <a href="#" class="modern-nav-link">API</a>
+          <a href="#" class="modern-nav-link">Deploy</a>
+          <button class="modern-cta-btn">Get Started →</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="modern-main">
+
+      <div id="modern-hero">
+        <div id="modern-hero-text">
+          <div id="modern-hero-eyebrow">● Arquitectura Web Moderna</div>
+          <h1 id="modern-hero-title">
+            La web como<br/>
+            <span id="modern-hero-gradient">plataforma distribuida</span>
+          </h1>
+          <p id="modern-hero-desc">
+            Serverless, componentes, edge computing y AI integrada.
+            La arquitectura moderna elimina el servidor como concepto central
+            y distribuye la lógica en el borde de la red.
+          </p>
+          <div id="modern-hero-actions">
+            <button class="modern-cta-btn" onclick="triggerSkeletons()">↺ Simular fetch API</button>
+            <button class="modern-ghost-btn" onclick="document.getElementById('modern-arch-section').scrollIntoView({behavior:'smooth'})">Ver diagrama ↓</button>
+          </div>
+        </div>
+        <div id="modern-hero-visual">
+          <div id="modern-hero-orb"></div>
+        </div>
+      </div>
+
+      <!-- CARDS GRID -->
+      <div id="modern-section-cards">
+        <div class="modern-section-label">▸ Componentes del Stack Moderno</div>
+        <div id="modern-cards-grid">
+          <article class="modern-card" style="--card-accent:#6366f1">
+            <div class="modern-card-icon">⚛</div>
+            <h3 class="modern-card-title">Frontend</h3>
+            <p class="modern-card-desc">React / Next.js con SSR, SSG e ISR. Componentes reutilizables, estado global con Zustand o Jotai.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">Next.js</span>
+              <span class="modern-tag">TypeScript</span>
+              <span class="modern-tag">Tailwind</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-ok">● Producción</span>
+            </div>
+          </article>
+
+          <article class="modern-card" style="--card-accent:#f59e0b">
+            <div class="modern-card-icon">🔌</div>
+            <h3 class="modern-card-title">API Layer</h3>
+            <p class="modern-card-desc">GraphQL + REST. Rate limiting, autenticación JWT, versioning semántico y documentación OpenAPI.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">GraphQL</span>
+              <span class="modern-tag">Node.js</span>
+              <span class="modern-tag">JWT</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-ok">● Producción</span>
+            </div>
+          </article>
+
+          <article class="modern-card" style="--card-accent:#10b981">
+            <div class="modern-card-icon">☁</div>
+            <h3 class="modern-card-title">Serverless</h3>
+            <p class="modern-card-desc">AWS Lambda / Vercel Edge Functions. Escala automáticamente a millones de req/s, pago por ejecución.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">Lambda</span>
+              <span class="modern-tag">Edge</span>
+              <span class="modern-tag">CDN</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-ok">● Activo</span>
+            </div>
+          </article>
+
+          <article class="modern-card" style="--card-accent:#ef4444">
+            <div class="modern-card-icon">🗄</div>
+            <h3 class="modern-card-title">Data Layer</h3>
+            <p class="modern-card-desc">PostgreSQL + Redis para caché. Prisma ORM, migraciones automáticas y replicas de solo lectura.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">PostgreSQL</span>
+              <span class="modern-tag">Redis</span>
+              <span class="modern-tag">Prisma</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-warn">● Alta carga</span>
+            </div>
+          </article>
+
+          <article class="modern-card" style="--card-accent:#8b5cf6">
+            <div class="modern-card-icon">🚀</div>
+            <h3 class="modern-card-title">CI/CD Pipeline</h3>
+            <p class="modern-card-desc">GitHub Actions con deploy automatizado. Preview deployments por PR y rollback con un solo click.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">GitHub Actions</span>
+              <span class="modern-tag">Docker</span>
+              <span class="modern-tag">Vercel</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-ok">● Automatizado</span>
+            </div>
+          </article>
+
+          <article class="modern-card" style="--card-accent:#06b6d4">
+            <div class="modern-card-icon">🤖</div>
+            <h3 class="modern-card-title">AI-Augmented</h3>
+            <p class="modern-card-desc">LLMs integrados como capa de arquitectura. RAG, embeddings vectoriales y streaming de respuestas.</p>
+            <div class="modern-card-tags">
+              <span class="modern-tag">OpenAI</span>
+              <span class="modern-tag">Pinecone</span>
+              <span class="modern-tag">LangChain</span>
+            </div>
+            <div class="modern-card-footer">
+              <span class="modern-card-status modern-status-new">● Nuevo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- DIAGRAMA ARQUITECTURA -->
+      <div id="modern-arch-section">
+        <div class="modern-section-label">▸ Diagrama de Arquitectura Completa</div>
+        <div id="modern-arch-diagram">
+          <div class="modern-arch-row">
+            <div class="modern-arch-node modern-arch-client">
+              <span class="modern-arch-icon">💻</span>
+              <span>Client</span>
+              <small>Browser / Native App</small>
+            </div>
+          </div>
+          <div class="modern-arch-connector-v">↕ HTTPS / WebSockets / HTTP2</div>
+          <div class="modern-arch-row">
+            <div class="modern-arch-node modern-arch-edge">
+              <span class="modern-arch-icon">🌍</span>
+              <span>Edge / CDN</span>
+              <small>Cloudflare / Fastly</small>
+            </div>
+          </div>
+          <div class="modern-arch-connector-v">↕ Internal network</div>
+          <div class="modern-arch-row modern-arch-row-multi">
+            <div class="modern-arch-node modern-arch-api">
+              <span class="modern-arch-icon">⚙</span>
+              <span>API Gateway</span>
+              <small>Auth · Rate Limit · Routing</small>
+            </div>
+            <div class="modern-arch-node modern-arch-lambda">
+              <span class="modern-arch-icon">λ</span>
+              <span>Functions</span>
+              <small>Serverless · Edge</small>
+            </div>
+            <div class="modern-arch-node modern-arch-queue">
+              <span class="modern-arch-icon">📨</span>
+              <span>Message Queue</span>
+              <small>SQS / Kafka / RabbitMQ</small>
+            </div>
+          </div>
+          <div class="modern-arch-connector-v">↕ Queries / Cache / Vectors</div>
+          <div class="modern-arch-row modern-arch-row-multi">
+            <div class="modern-arch-node modern-arch-db2">
+              <span class="modern-arch-icon">🗄</span>
+              <span>PostgreSQL</span>
+              <small>Primary + Replicas</small>
+            </div>
+            <div class="modern-arch-node modern-arch-cache">
+              <span class="modern-arch-icon">⚡</span>
+              <span>Redis</span>
+              <small>Cache + Sessions</small>
+            </div>
+            <div class="modern-arch-node modern-arch-vector">
+              <span class="modern-arch-icon">🔮</span>
+              <span>Vector DB</span>
+              <small>AI / RAG / Embeddings</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="modern-footer">
+      <div id="modern-footer-inner">
+        <div>
+          <strong>WebArch 2024</strong> — Presentación Examen Final · Evolución de la Arquitectura Web
+        </div>
+        <div id="modern-footer-status">
+          <span class="modern-status-dot"></span>
+          <span>Todos los sistemas operativos</span>
+        </div>
+        <div>HTML5 · CSS3 · Vanilla JS · Sin dependencias externas</div>
+      </div>
+    </footer>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
